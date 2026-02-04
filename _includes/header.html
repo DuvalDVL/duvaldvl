@@ -1,0 +1,23 @@
+<header class="site-header">
+    <div class="container navbar">
+        <a href="{{ site.baseurl }}/" class="logo">Duval <span>DVL.</span></a>
+        
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+        
+        <nav class="nav-links" id="nav-links">
+            <a href="{{ site.baseurl }}/">Accueil</a>
+            <a href="{{ site.baseurl }}/creation-sites-internet">Site Internet</a>
+            <a href="{{ site.baseurl }}/referencement-local">SEO Local</a>
+            <a href="{{ site.baseurl }}/nos-realisations">Réalisations</a>
+            <a href="{{ site.baseurl }}/a-propos">À propos</a>
+            <a href="{{ site.baseurl }}/contact" class="btn" style="padding: 8px 20px;">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<script>
+    // Petit script ultra-léger pour le menu mobile
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        document.getElementById('nav-links').classList.toggle('active');
+    });
+</script>
