@@ -186,7 +186,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Badge Google Avis (Hero) */
 .google-badge-link {
-    display: inline-flex; align-items: center; gap: 10px;
+    display: inline-flex; align-items: center; gap: 8px;
     background: white;
     padding: 8px 16px;
     border-radius: 100px;
