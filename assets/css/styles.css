@@ -278,3 +278,63 @@ details[open] summary::after { transform: rotate(45deg); }
     margin-bottom: 0.5rem;
     color: var(--accent-color);
 }
+
+/* --- PAGE CONTACT & FORMULAIRE --- */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Colonne info plus petite que le formulaire */
+    gap: 4rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.contact-info-box {
+    background: var(--bg-light);
+    padding: 2.5rem;
+    border-radius: var(--radius-card);
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+
+.contact-method h4 { margin-bottom: 0.2rem; font-size: 1.1rem; }
+.contact-method p, .contact-method a { color: var(--text-body); font-size: 0.95rem; }
+.contact-method a:hover { color: var(--primary-color); text-decoration: underline; }
+
+/* Styles du Formulaire */
+.form-group { margin-bottom: 1.5rem; }
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.form-textarea { resize: vertical; min-height: 150px; }
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 153, 102, 0.1); /* Halo vert doux */
+}
