@@ -1,33 +1,47 @@
 <footer class="site-footer">
     <div class="container footer-grid">
+        
         <div>
             <div class="logo">Duval <span>DVL.</span></div>
-            <p style="margin-top: 10px; color: #aaa;">
-                Transformation digitale et visibilité locale.<br>
-                Basé à Sallanches, Haute-Savoie.
+            <p style="margin-top: 15px; color: #aaa; line-height: 1.6;">
+                Expertise web et référencement local en Haute-Savoie.<br>
+                <strong>Adresse :</strong> 540 rue Charles Viard,<br>74700 Sallanches.
             </p>
         </div>
         
         <div>
-            <h4 class="footer-title">Liens Utiles</h4>
-            <ul>
-                <li><a href="{{ site.baseurl }}/mentions-legales">Mentions Légales</a></li>
-                <li><a href="{{ site.baseurl }}/confidentialite">Politique de confidentialité</a></li>
-                <li><a href="{{ site.baseurl }}/cgu">CGV / CGU</a></li>
+            <h4 class="footer-title">Navigation</h4>
+            <ul style="line-height: 2;">
+                <li><a href="{{ site.baseurl }}/creation-sites-internet">Création Site Web</a></li>
+                <li><a href="{{ site.baseurl }}/referencement-local">Référencement Local</a></li>
+                <li><a href="{{ site.baseurl }}/nos-realisations">Portfolio</a></li>
+                <li><a href="{{ site.baseurl }}/a-propos">À propos</a></li>
             </ul>
         </div>
 
         <div>
-            <h4 class="footer-title">Réseaux & Contact</h4>
-            <div class="social-icons">
+            <h4 class="footer-title">Contact & Horaires</h4>
+            <p style="color: #aaa; margin-bottom: 10px;">
+                <span style="color: white; font-weight: bold;">Tél :</span> <a href="tel:+33760166136" style="color: #aaa;">07 60 16 61 36</a><br>
+                <span style="color: white; font-weight: bold;">Mail :</span> <a href="mailto:duvalrenouveau@gmail.com" style="color: #aaa;">duvalrenouveau@gmail.com</a>
+            </p>
+            <p style="color: #888; font-size: 0.85rem;">
+                Lun-Ven : 08h-19h<br>
+                Sam : 09h-12h<br>
+                Dim : Fermé
+            </p>
+            
+            <div class="social-icons" style="margin-top: 15px;">
                 <a href="{{ site.social.linkedin }}" target="_blank" aria-label="LinkedIn">In</a>
                 <a href="{{ site.social.instagram }}" target="_blank" aria-label="Instagram">Ig</a>
                 <a href="{{ site.social.gmb }}" target="_blank" aria-label="Avis Google">G+</a>
             </div>
-            <p style="margin-top: 10px;">contact@duvaldvl.com</p>
         </div>
     </div>
-    <div class="container text-center" style="margin-top: 2rem; color: #555; border-top: 1px solid #222; padding-top: 1rem;">
-        &copy; {{ 'now' | date: "%Y" }} Duval DVL. Tous droits réservés.
+
+    <div class="container text-center" style="margin-top: 3rem; border-top: 1px solid #222; padding-top: 1.5rem; color: #555; font-size: 0.85rem;">
+        &copy; {{ 'now' | date: "%Y" }} Duval DVL. Tous droits réservés. 
+        <span style="margin: 0 10px;">|</span> <a href="{{ site.baseurl }}/mentions-legales">Mentions Légales</a>
+        <span style="margin: 0 10px;">|</span> <a href="{{ site.baseurl }}/cgu">CGV</a>
     </div>
 </footer>
