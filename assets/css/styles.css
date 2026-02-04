@@ -243,3 +243,85 @@ details[open] summary::after { transform: rotate(45deg); }
 .project-info { padding: 1.5rem; border-top: 1px solid #f0f0f0; }
 .project-category { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary-color); font-weight: 700; margin-bottom: 0.5rem; display: block; }
 .project-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent-color); }
+
+/* --- BANNIÈRE COOKIES (GDPR) --- */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 350px;
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    z-index: 9999;
+    border: 1px solid #f0f0f0;
+    font-family: var(--font-main);
+    display: none; /* Caché par défaut, activé par JS */
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.cookie-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+    display: flex; align-items: center; gap: 8px;
+}
+
+.cookie-text {
+    font-size: 0.9rem;
+    color: var(--text-body);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cookie-accept {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    flex: 1;
+    transition: 0.3s;
+}
+
+.btn-cookie-accept:hover { background: var(--primary-dark); }
+
+.btn-cookie-refuse {
+    background: transparent;
+    color: #666;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cookie-refuse:hover { background: #f5f5f5; color: #333; border-color: #ccc; }
+
+/* Mobile : Bandeau en bas toute largeur */
+@media (max-width: 480px) {
+    .cookie-banner {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 16px 16px 0 0;
+        padding: 20px;
+    }
+}
