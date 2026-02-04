@@ -137,34 +137,56 @@ img { max-width: 100%; height: auto; }
 .card-link { margin-top: auto; color: var(--primary-color); font-weight: 700; display: inline-flex; align-items: center; gap: 5px; }
 .card-link:hover { gap: 10px; }
 
-/* --- TARIFS (Nouveau) --- */
+/* --- TARIFS (Animés) --- */
 .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 3rem; }
+
 .pricing-card {
     background: var(--primary-gradient);
     color: white; padding: 3rem; border-radius: 24px;
     box-shadow: var(--shadow-md); position: relative; overflow: hidden;
+    /* Ajout de la transition pour la fluidité */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
+
+/* L'effet au survol : la carte monte et l'ombre grandit */
+.pricing-card:hover {
+    transform: translateY(-12px); /* Monte de 12px */
+    box-shadow: 0 20px 40px rgba(0, 153, 102, 0.4); /* Ombre verte diffuse */
+}
+
 .pricing-card h3 { color: white; font-size: 1.8rem; margin-bottom: 0.5rem; }
 .price-tag { font-size: 3.5rem; font-weight: 800; line-height: 1; margin: 1.5rem 0; }
 .price-tag span { font-size: 1rem; font-weight: 500; opacity: 0.9; display: block; margin-bottom: 5px; }
 .pricing-features { margin: 2rem 0; text-align: left; }
 .pricing-features li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 0.95rem; }
-.check-icon { min-width: 20px; color: #adf0d1; } /* Vert très clair pour les coches */
+.check-icon { min-width: 20px; color: #adf0d1; }
 
-/* --- AVIS CLIENTS (Refonte) --- */
+/* --- AVIS CLIENTS (Animés) --- */
 .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 3rem; }
+
 .review-card {
-    background: var(--primary-gradient); /* Fond dégradé vert */
+    background: var(--primary-gradient);
     color: white; padding: 2.5rem; border-radius: var(--radius-card);
     box-shadow: var(--shadow-sm); position: relative;
+    /* Ajout de la transition */
+    transition: all 0.3s ease;
+    cursor: default; /* Pour ne pas afficher le pointeur de lien, mais garder l'effet */
 }
+
+/* L'effet au survol : léger zoom et montée */
+.review-card:hover {
+    transform: translateY(-5px) scale(1.02); /* Monte et grossit très légèrement */
+    box-shadow: 0 15px 30px rgba(0, 153, 102, 0.25);
+    z-index: 1;
+}
+
 .review-header { display: flex; align-items: center; gap: 15px; margin-bottom: 1.5rem; }
 .review-avatar {
     width: 50px; height: 50px; background: rgba(255,255,255,0.2);
     border-radius: 50%; display: flex; align-items: center; justify-content: center;
     font-weight: bold; color: white; font-size: 1.2rem;
 }
-.review-stars { color: #FFD700; font-size: 0.9rem; margin-top: 2px; } /* Or jaune */
+.review-stars { color: #FFD700; font-size: 0.9rem; margin-top: 2px; }
 .review-text { font-style: italic; opacity: 0.95; font-size: 1rem; line-height: 1.6; }
 .quote-icon { position: absolute; top: 20px; right: 20px; width: 40px; height: 40px; fill: rgba(255,255,255,0.1); }
 
