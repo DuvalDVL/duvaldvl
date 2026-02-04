@@ -35,6 +35,27 @@ description: Création de sites internet performants et stratégies SEO locales 
     </div>
 </section>
 
+<section class="stats-section">
+    <div class="container stats-grid">
+        <div class="stat-item">
+            <h3>40+</h3>
+            <p>Sites internet créés</p>
+        </div>
+        <div class="stat-item">
+            <h3>50+</h3>
+            <p>Fiches Google optimisées</p>
+        </div>
+        <div class="stat-item">
+            <h3>20+</h3>
+            <p>Sites optimisés SEO</p>
+        </div>
+        <div class="stat-item">
+            <h3>+25%</h3>
+            <p>de CA pour mes clients</p>
+        </div>
+    </div>
+</section>
+
 <section class="section bg-light">
     <div class="container">
         <div class="text-center" style="max-width: 700px; margin: 0 auto;">
@@ -245,3 +266,47 @@ description: Création de sites internet performants et stratégies SEO locales 
         <a href="{{ site.baseurl }}/contact" class="btn">Me contacter maintenant</a>
     </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Duval DVL",
+  "image": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.png",
+  "description": "Webdesigner et expert SEO à Sallanches. Création de sites internet et référencement local en Haute-Savoie.",
+  "telephone": "07 60 16 61 36",
+  "email": "duvalrenouveau@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "540 rue Charles Viard",
+    "addressLocality": "Sallanches",
+    "postalCode": "74700",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.9405, 
+    "longitude": 6.6305
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "12:00"
+    }
+  ],
+  "url": "https://www.duvaldvl.com",
+  "priceRange": "€€",
+  "sameAs": [
+    "{{ site.social.instagram }}",
+    "{{ site.social.linkedin }}"
+  ]
+}
+</script>
