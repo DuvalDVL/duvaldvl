@@ -1,1 +1,4 @@
-d
+User-agent: *
+Allow: /
+
+Sitemap: https://duvaldvl.github.io/duvaldvl/sitemap.xml
