@@ -1,110 +1,183 @@
 :root {
-    /* Identité Visuelle */
-    --primary-color: #009966; /* Le vert vif de tes boutons */
-    --primary-dark: #007a52; /* Vert au survol */
-    --text-color: #1a1a1a;
-    --bg-color: #ffffff;
-    --bg-light: #f4fcf8; /* Un vert très très pâle pour les sections alternées */
-    --gray-light: #e5e5e5;
+    /* Palette de couleurs Duval DVL */
+    --primary-color: #009966;      /* Ton vert principal */
+    --primary-dark: #007a52;       /* Vert plus foncé pour les survols */
+    --accent-color: #111111;       /* Noir doux pour les titres */
+    --text-body: #4a5568;          /* Gris foncé pour le texte (lisibilité) */
+    --bg-light: #f8fcf9;           /* Fond très légèrement vert pour alterner */
+    --white: #ffffff;
     
-    /* Typographie & Espacements */
-    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /* Dimensions & Effets */
     --container-width: 1200px;
-    --header-height: 70px;
-    --spacing-section: 4rem;
-    --radius-btn: 50px; /* Boutons arrondis comme sur ta maquette */
+    --header-height: 80px;
+    --radius-card: 16px;
+    --radius-btn: 50px;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 153, 102, 0.15); /* Ombre verte subtile */
+    
+    /* Typographie système optimisée (Pas de requête Google Fonts = Vitesse Max) */
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Reset CSS minimaliste pour la vitesse */
+/* --- RESET & BASES --- */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     font-family: var(--font-main);
-    color: var(--text-color);
-    line-height: 1.6;
-    background-color: var(--bg-color);
-    padding-top: var(--header-height); /* Pour ne pas cacher le contenu sous le header fixe */
+    color: var(--text-body);
+    line-height: 1.7;
+    background-color: var(--white);
+    padding-top: var(--header-height);
+    -webkit-font-smoothing: antialiased;
 }
 
-a { text-decoration: none; color: inherit; transition: 0.3s; }
+h1, h2, h3, h4 { color: var(--accent-color); font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1.5rem; }
+h2 { font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: 1rem; }
+h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+
+a { text-decoration: none; transition: all 0.3s ease; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; height: auto; display: block; }
 
-/* Utilitaires Layout */
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.section { padding: var(--spacing-section) 0; }
+.container { max-width: var(--container-width); margin: 0 auto; padding: 0 24px; }
+.section { padding: 5rem 0; }
 .bg-light { background-color: var(--bg-light); }
 .text-center { text-align: center; }
-
-/* Typographie */
-h1, h2, h3 { line-height: 1.2; margin-bottom: 1rem; font-weight: 700; }
-h1 { font-size: 2.5rem; color: var(--text-color); }
-h2 { font-size: 2rem; margin-bottom: 2rem; }
 .text-highlight { color: var(--primary-color); }
 
-/* Composants : Boutons */
+/* --- BOUTONS --- */
 .btn {
-    display: inline-block;
+    display: inline-flex; align-items: center; justify-content: center;
     background: var(--primary-color);
     color: white;
-    padding: 12px 30px;
+    padding: 14px 32px;
     border-radius: var(--radius-btn);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.05rem;
     border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 15px rgba(0, 153, 102, 0.3);
 }
-.btn:hover { background: var(--primary-dark); border-color: var(--primary-dark); transform: translateY(-2px); }
-.btn-outline { background: transparent; color: var(--primary-color); }
-.btn-outline:hover { background: var(--primary-color); color: white; }
+.btn:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 153, 102, 0.4);
+}
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    box-shadow: none;
+}
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
 
-/* Navigation (Header) */
+/* --- HEADER / NAVBAR --- */
 .site-header {
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); /* Effet flou moderne type Apple */
     height: var(--header-height);
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: fixed; top: 0; left: 0; right: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    display: flex;
-    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex; align-items: center;
 }
 .navbar { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-.logo { font-weight: 800; font-size: 1.5rem; color: var(--text-color); }
+
+.logo { font-size: 1.6rem; font-weight: 900; color: var(--accent-color); letter-spacing: -0.05em; }
 .logo span { color: var(--primary-color); }
 
-.nav-links { display: flex; gap: 30px; }
-.nav-links a { font-weight: 500; font-size: 0.95rem; }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a { font-weight: 600; font-size: 0.95rem; color: var(--accent-color); }
 .nav-links a:hover { color: var(--primary-color); }
 
-/* Mobile Menu (Burger) - CSS pur sans JS lourd */
-.menu-toggle { display: none; cursor: pointer; font-size: 1.5rem; }
+/* Menu Burger Mobile */
+.menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; color: var(--accent-color); }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .nav-links {
-        display: none; /* Caché par défaut sur mobile */
-        position: absolute;
-        top: var(--header-height);
-        left: 0;
-        width: 100%;
+        position: absolute; top: var(--header-height); left: 0; right: 0;
         background: white;
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-        text-align: center;
+        flex-direction: column; padding: 2rem;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        transform: translateY(-150%); transition: transform 0.3s ease;
     }
-    .nav-links.active { display: flex; }
+    .nav-links.active { transform: translateY(0); }
     .menu-toggle { display: block; }
-    h1 { font-size: 2rem; }
+    .btn { width: 100%; }
 }
 
-/* Footer */
-.site-footer { background: #111; color: white; padding: 3rem 0; font-size: 0.9rem; }
-.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
-.footer-title { color: white; margin-bottom: 1rem; font-size: 1.1rem; }
-.social-icons a { margin-right: 15px; font-size: 1.2rem; }
+/* --- HERO SECTION --- */
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    min-height: 80vh;
+}
+.hero-content p { font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-body); max-width: 90%; }
+.hero-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+@media (max-width: 768px) {
+    .hero-wrapper { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+    .hero-content p { margin: 0 auto 2rem auto; }
+}
+
+/* --- CARDS SERVICES --- */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 3rem;
+}
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex; flex-direction: column; align-items: flex-start;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+}
+.card h3 { margin-top: 1rem; }
+.card-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    background: #e6f5ee;
+    width: 60px; height: 60px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+.card-link {
+    margin-top: auto;
+    color: var(--primary-color);
+    font-weight: 700;
+    display: inline-flex; align-items: center; gap: 5px;
+}
+.card-link:hover { gap: 10px; } /* Petite animation de la flèche */
+
+/* --- FOOTER --- */
+.site-footer { background: #0a0a0a; color: white; padding: 4rem 0 2rem 0; }
+.footer-title { color: white; font-size: 1.2rem; margin-bottom: 1.5rem; }
+.site-footer a { color: #888; }
+.site-footer a:hover { color: white; }
+.social-icons { display: flex; gap: 15px; }
+.social-icons a { 
+    background: #222; width: 40px; height: 40px; 
+    display: flex; align-items: center; justify-content: center; 
+    border-radius: 50%; transition: 0.3s;
+}
+.social-icons a:hover { background: var(--primary-color); color: white; }
