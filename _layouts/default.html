@@ -38,5 +38,50 @@
         }
     </script>
 
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-title">
+            <span>🍪</span> Cookies & Confidentialité
+        </div>
+        <p class="cookie-text">
+            J'utilise des cookies pour améliorer votre expérience et analyser le trafic. 
+            Vous pouvez consulter ma <a href="{{ site.baseurl }}/confidentialite" style="text-decoration: underline; color: var(--primary-color);">politique de confidentialité</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="cookie-refuse" class="btn-cookie-refuse">Continuer sans</button>
+            <button id="cookie-accept" class="btn-cookie-accept">Accepter</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptBtn = document.getElementById('cookie-accept');
+            const refuseBtn = document.getElementById('cookie-refuse');
+
+            // Vérifier si l'utilisateur a déjà fait un choix
+            if (!localStorage.getItem('cookieConsent')) {
+                // Si pas de choix, on affiche la bannière après 1 seconde (effet smooth)
+                setTimeout(function() {
+                    cookieBanner.style.display = 'block';
+                }, 1000);
+            }
+
+            // Action Accepter
+            acceptBtn.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieBanner.style.display = 'none';
+                // Ici, tu pourras ajouter le code de chargement Google Analytics plus tard
+                console.log("Cookies acceptés");
+            });
+
+            // Action Refuser
+            refuseBtn.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'refused');
+                cookieBanner.style.display = 'none';
+                console.log("Cookies refusés");
+            });
+        });
+    </script>
+
 </body>
 </html>
