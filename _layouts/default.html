@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ site.url }}/assets/img/hero-home.webp"> <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
     
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
 
