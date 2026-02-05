@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://duvaldvl.github.io/duvaldvl/sitemap.xml
+Sitemap: https://duvaldvl.com/sitemap.xml
