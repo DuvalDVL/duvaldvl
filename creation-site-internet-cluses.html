@@ -5,6 +5,24 @@ description: Agence web à Cluses (74300). Sites internet pour l'industrie, le d
 permalink: /creation-site-internet-cluses/
 ---
 
+<style>
+    /* Par défaut (PC) : Alignement à gauche */
+    .card-local-fix {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Sur Mobile : On force le centrage */
+    @media (max-width: 768px) {
+        .card-local-fix {
+            text-align: center !important;
+            align-items: center !important;
+        }
+    }
+</style>
+
 <section class="section">
     <div class="container hero-wrapper">
         <div class="hero-content">
@@ -14,7 +32,7 @@ permalink: /creation-site-internet-cluses/
                 PME, Décolleteurs, BTP à Cluses, Scionzier ou Marnaz : votre site internet est votre premier commercial. Offrez-vous une vitrine professionnelle pour rassurer vos donneurs d'ordres et attirer de nouveaux talents.
             </p>
             <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="#tarifs" class="btn">Voir le tarif (Dès 600€)</a>
+                <a href="#tarifs" class="btn">Voir le tarif</a>
                 <a href="#avantages" class="btn btn-secondary">Pourquoi refaire mon site ?</a>
             </div>
         </div>
@@ -34,7 +52,7 @@ permalink: /creation-site-internet-cluses/
         </div>
 
         <div class="grid-3">
-            <article class="card">
+            <article class="card card-local-fix">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
                 </div>
@@ -42,7 +60,7 @@ permalink: /creation-site-internet-cluses/
                 <p>Montrez votre parc machines, vos certifications (ISO 9001) et vos réalisations. Rassurez immédiatement les grands comptes qui visitent votre site.</p>
             </article>
 
-            <article class="card">
+            <article class="card card-local-fix">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05c1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
                 </div>
@@ -50,7 +68,7 @@ permalink: /creation-site-internet-cluses/
                 <p>Le recrutement est difficile dans la vallée. Un site moderne avec une page "Carrières" attractive est indispensable pour donner envie aux jeunes de postuler chez vous.</p>
             </article>
 
-            <article class="card">
+            <article class="card card-local-fix">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
                 </div>
@@ -63,28 +81,28 @@ permalink: /creation-site-internet-cluses/
 
 <section class="section" id="tarifs">
     <div class="container">
-        <div class="pricing-card" style="max-width: 700px; margin: 0 auto; border-top: 5px solid var(--accent-color);">
+        <div class="pricing-card" style="max-width: 700px; margin: 0 auto;">
             <h3 class="text-center">Pack PME & Industrie</h3>
             <div class="price-tag text-center">
-                <span>Coût unique (Investissement)</span>
+                <span style="display: block; font-size: 0.9rem; font-weight: normal; margin-bottom: 5px;">À partir de</span>
                 600,00 €
             </div>
             <p class="text-center" style="margin-bottom: 2rem;">
                 En tant que chef d'entreprise, vous chassez les coûts inutiles. Pourquoi payer un loyer pour votre site web ?
             </p>
             
-            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-bottom: 2rem; gap: 20px;">
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-bottom: 2rem; gap: 20px; color: #ffffff;">
                 <div style="text-align: left;">
-                    <strong style="color: #d32f2f;">❌ Agence "Classique"</strong>
-                    <ul style="font-size: 0.9rem; color: #666; list-style: none; margin-top: 5px;">
+                    <strong style="color: #ffffff;">❌ Agence "Classique"</strong>
+                    <ul style="font-size: 0.95rem; color: #ffffff; list-style: none; margin-top: 5px; opacity: 0.9;">
                         <li>- Création : 1500€+</li>
                         <li>- Maintenance : 50€/mois</li>
                         <li>- Total 3 ans : <strong>> 3300€</strong></li>
                     </ul>
                 </div>
                 <div style="text-align: left;">
-                    <strong style="color: var(--primary-color);">✅ Duval DVL</strong>
-                    <ul style="font-size: 0.9rem; color: #666; list-style: none; margin-top: 5px;">
+                    <strong style="color: #ffffff;">✅ Duval DVL</strong>
+                    <ul style="font-size: 0.95rem; color: #ffffff; list-style: none; margin-top: 5px; font-weight: bold;">
                         <li>- Création : 600€</li>
                         <li>- Maintenance : 0€</li>
                         <li>- Total 3 ans : <strong>~630€</strong></li>
@@ -94,7 +112,7 @@ permalink: /creation-site-internet-cluses/
 
             <div class="text-center">
                 <a href="{{ site.baseurl }}/contact" class="btn" style="width: 100%;">Demander un devis formel</a>
-                <p style="margin-top: 10px; font-size: 0.85rem; color: #888;">Devis envoyé sous 24h ouvrées.</p>
+                <p style="margin-top: 10px; font-size: 0.85rem; color: #f0f0f0;">Devis envoyé sous 24h ouvrées.</p>
             </div>
         </div>
     </div>
@@ -106,7 +124,7 @@ permalink: /creation-site-internet-cluses/
         <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
             Je me déplace dans vos ateliers à Cluses, Scionzier, Marnaz ou Thyez pour prendre les photos et comprendre votre métier.
         </p>
-        <a href="{{ site.baseurl }}/contact" class="btn btn-secondary">Prendre rendez-vous</a>
+        <a href="{{ site.baseurl }}/contact" class="btn btn-secondary">Je deviens visible à Cluses</a>
     </div>
 </section>
 
