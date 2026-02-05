@@ -5,6 +5,24 @@ description: Création de sites web à Sallanches (74700). Site vitrine et e-com
 permalink: /creation-site-internet-sallanches/
 ---
 
+<style>
+    /* Par défaut (PC) : Les cartes sont alignées à gauche */
+    .service-card-local {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligne le bouton/lien à gauche */
+    }
+
+    /* Sur Mobile : On force le centrage de tout le contenu de la carte */
+    @media (max-width: 768px) {
+        .service-card-local {
+            text-align: center !important;
+            align-items: center !important; /* Centre le bouton/lien */
+        }
+    }
+</style>
+
 <section class="section">
     <div class="container hero-wrapper">
         <div class="hero-content">
@@ -15,7 +33,7 @@ permalink: /creation-site-internet-sallanches/
             </p>
             <div style="display: flex; gap: 15px; flex-wrap: wrap;">
                 <a href="#comparatif" class="btn">Pourquoi c'est moins cher ?</a>
-                <a href="{{ site.baseurl }}/contact" class="btn btn-secondary">Je veux accroitre mon CA</a>
+                <a href="{{ site.baseurl }}/contact" class="btn btn-secondary">Me rencontrer à Sallanches</a>
             </div>
         </div>
         <div class="hero-image">
@@ -94,28 +112,31 @@ permalink: /creation-site-internet-sallanches/
                 </li>
                 <li style="display: flex; gap: 10px;">
                     <svg class="icon-svg" style="color:var(--primary-color);" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    Je suis joignable directement sur mon portable (07 60 16 61 36).
+                    Je suis joignable directement sur mon portable.
                 </li>
             </ul>
         </div>
     </div>
 </section>
 
-<section class="section bg-light text-center">
+<section class="section bg-light">
     <div class="container">
-        <h2>Mes services à Sallanches</h2>
+        <div class="text-center">
+            <h2>Mes services à Sallanches</h2>
+        </div>
+        
         <div class="grid-3" style="margin-top: 3rem;">
-            <article class="card">
+            <article class="card service-card-local">
                 <h3>Site Vitrine</h3>
                 <p>Présentez votre activité, vos horaires et vos réalisations avec un site pro.</p>
                 <a href="{{ site.baseurl }}/creation-sites-internet" class="card-link">Détails →</a>
             </article>
-            <article class="card">
+            <article class="card service-card-local">
                 <h3>SEO Local</h3>
                 <p>Apparaissez sur "Plombier Sallanches" ou "Coiffeur Sallanches" dans Google.</p>
                 <a href="{{ site.baseurl }}/referencement-local" class="card-link">Détails →</a>
             </article>
-            <article class="card">
+            <article class="card service-card-local">
                 <h3>E-commerce</h3>
                 <p>Vendez vos produits en ligne (Click & Collect ou livraison).</p>
                 <a href="{{ site.baseurl }}/creation-sites-internet" class="card-link">Détails →</a>
@@ -159,7 +180,7 @@ permalink: /creation-site-internet-sallanches/
   "description": "Création de site internet sans abonnement à Sallanches. Webdesigner local pour artisans et PME.",
   "offers": {
     "@type": "Offer",
-    "price": "700",
+    "price": "600",
     "priceCurrency": "EUR",
     "description": "Site vitrine clé en main sans frais mensuels"
   }
