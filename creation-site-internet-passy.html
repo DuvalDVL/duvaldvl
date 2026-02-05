@@ -5,6 +5,24 @@ description: Sites internet pour artisans et commerçants à Passy, Chedde et Sa
 permalink: /creation-site-internet-passy/
 ---
 
+<style>
+    /* Par défaut (PC) : Alignement à gauche */
+    .card-local-fix {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Sur Mobile : On force le centrage */
+    @media (max-width: 768px) {
+        .card-local-fix {
+            text-align: center !important;
+            align-items: center !important;
+        }
+    }
+</style>
+
 <section class="section">
     <div class="container hero-wrapper">
         <div class="hero-content">
@@ -14,7 +32,7 @@ permalink: /creation-site-internet-passy/
                 Artisans, commerçants et thérapeutes du Pays du Mont-Blanc : vos futurs clients vous cherchent sur leur téléphone. Ne laissez pas les chantiers aux concurrents.
             </p>
             <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                <a href="#tarifs" class="btn">Voir le tarif (Dès 600€)</a>
+                <a href="#tarifs" class="btn">Voir le tarif</a>
                 <a href="#artisan" class="btn btn-secondary">Offre Spéciale Artisan</a>
             </div>
         </div>
@@ -34,7 +52,7 @@ permalink: /creation-site-internet-passy/
         </div>
 
         <div class="grid-3">
-            <article class="card">
+            <article class="card card-local-fix">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 </div>
@@ -42,15 +60,15 @@ permalink: /creation-site-internet-passy/
                 <p>Quand on cherche "Rénovation Passy" ou "Électricien Chedde", il faut apparaître dans les 3 premiers sur la carte Google. C'est ma spécialité.</p>
             </article>
 
-            <article class="card">
+            <article class="card card-local-fix">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 11l4.5 6H5l3.5-4.5z"/></svg>
                 </div>
-                <h3>Montrez vos Chantier</h3>
+                <h3>Montrez vos Chantiers</h3>
                 <p>Fini de chercher les photos sur votre téléphone pour les montrer au client. Votre site est votre book photo professionnel, accessible 24h/24.</p>
             </article>
 
-            <article class="card">
+            <article class="card card-local-fix">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
                 </div>
@@ -63,7 +81,7 @@ permalink: /creation-site-internet-passy/
 
 <section class="section" id="tarifs">
     <div class="container">
-        <div class="pricing-card" style="max-width: 700px; margin: 0 auto; border: 2px solid var(--accent-color);">
+        <div class="pricing-card" style="max-width: 700px; margin: 0 auto;">
             <h3 class="text-center">Pack Artisan & Commerce</h3>
             <div class="price-tag text-center">
                 <span>Investissement unique</span>
@@ -104,7 +122,7 @@ permalink: /creation-site-internet-passy/
         <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
             Je suis basé à Sallanches, à 5 minutes de Passy. Je connais bien le secteur (Chedde, Le Fayet, Plateau d'Assy). Pas de hotline, un vrai numéro de portable.
         </p>
-        <a href="{{ site.baseurl }}/contact" class="btn btn-secondary">07 60 16 61 36</a>
+        <a href="{{ site.baseurl }}/contact" class="btn btn-secondary">Je deviens visible à Passy</a>
     </div>
 </section>
 
