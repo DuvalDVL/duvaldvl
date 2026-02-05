@@ -20,6 +20,68 @@
     
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon.png">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Duval DVL - Création Site Internet & SEO",
+  "image": "{{ site.url }}/assets/img/hero-home.webp",
+  "@id": "{{ site.url }}",
+  "url": "{{ site.url }}",
+  "telephone": "+33760166136",
+  "email": "duvalrenouveau@gmail.com",
+  "priceRange": "€€",
+  "description": "Webdesigner et expert SEO à Sallanches. Création de sites internet sans abonnement mensuel pour les artisans et PME en Haute-Savoie (Chamonix, Megève, Cluses, Annecy).",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "540 rue Charles Viard",
+    "addressLocality": "Sallanches",
+    "postalCode": "74700",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.935,
+    "longitude": 6.629
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "12:00"
+    }
+  ],
+  "areaServed": [
+    { "@type": "City", "name": "Sallanches" },
+    { "@type": "City", "name": "Chamonix" },
+    { "@type": "City", "name": "Megève" },
+    { "@type": "City", "name": "Cluses" },
+    { "@type": "City", "name": "Passy" },
+    { "@type": "City", "name": "Bonneville" },
+    { "@type": "City", "name": "Annecy" },
+    { "@type": "City", "name": "Annemasse" },
+    { "@type": "City", "name": "Genève" }
+  ],
+  "sameAs": [
+    "{{ site.social.linkedin }}",
+    "{{ site.social.instagram }}",
+    "{{ site.social.gmb }}"
+  ]
+}
+</script>
 </head>
 <body>
 
