@@ -68,6 +68,7 @@
             
             <div class="footer-legal-links">
                 <a href="{{ site.baseurl }}/mentions-legales" style="color: #666; text-decoration: none; margin-right: 15px;">Mentions Légales</a>
+                <a href="{{ site.baseurl }}/cgu" style="color: #666; text-decoration: none; margin-right: 15px;">CGU</a>
                 <a href="{{ site.baseurl }}/confidentialite" style="color: #666; text-decoration: none;">Politique de confidentialité</a>
             </div>
         </div>
@@ -76,7 +77,7 @@
     <style>
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 colonnes seulement */
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
         .footer-links a:hover {
@@ -86,7 +87,7 @@
         /* Mobile */
         @media (max-width: 992px) {
             .footer-grid {
-                grid-template-columns: 1fr; /* 1 colonne sur tablette/mobile pour lisibilité */
+                grid-template-columns: 1fr;
             }
             .footer-bottom {
                 flex-direction: column;
