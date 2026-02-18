@@ -4,7 +4,7 @@ description: >-
   Webdesigner freelance & Expert SEO à Sallanches (74). Création de sites internet
   et référencement local en Haute-Savoie pour booster votre visibilité.
 baseurl: "/duvaldvl" # À laisser tel quel pour le test, à vider pour le domaine final
-url: "https://duvaldvl.github.io" # À changer par ton domaine final plus tard
+url: "https://duvaldvl.com" # À changer par ton domaine final plus tard
 twitter_username: duvaldvl
 github_username: duvaldvl
 locale: fr_FR
