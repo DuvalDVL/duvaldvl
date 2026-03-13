@@ -6,9 +6,16 @@ permalink: /nos-realisations/
 ---
 
 <style>
+.portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.portfolio-grid .project-card {
+    overflow: hidden;
+}
 .portfolio-grid .project-image-wrapper {
     height: 420px;
     overflow: hidden;
+    width: 100%;
 }
 .portfolio-grid .project-image-wrapper img {
     width: 100%;
@@ -18,6 +25,11 @@ permalink: /nos-realisations/
 }
 .portfolio-grid .project-card:hover .project-image-wrapper img {
     transform: translateY(-8%);
+}
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 
@@ -95,7 +107,7 @@ permalink: /nos-realisations/
                     <div class="project-info">
                         <span class="project-category">Vitrine & B2B · Industrie décolletage</span>
                         <h3 class="project-title">GTS Group — Vallée de l'Arve</h3>
-                        <p style="font-size: 0.9rem; color: #666;">Architecture multi-entités. Site institutionnel groupe.</p>
+                        <p style="font-size: 0.9rem; color: #666;">Architecture multi-entités, catalogue B2B sur accès privé. Site institutionnel groupe.</p>
                     </div>
                 </a>
             </article>
