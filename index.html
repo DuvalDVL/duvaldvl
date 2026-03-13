@@ -86,6 +86,122 @@ description: Création de sites internet performants et stratégies SEO locales 
     </div>
 </section>
 
+<style>
+.problems-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 780px;
+    margin: 0 auto 3rem;
+}
+.problem-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    border-radius: 14px;
+    padding: 1.2rem 1.4rem;
+    transition: 0.3s;
+}
+.problem-item:hover {
+    background: #fff5f5;
+    border-color: #ffd5d5;
+}
+.problem-strike {
+    font-weight: 600;
+    color: #bbb;
+    text-decoration: line-through;
+    text-decoration-color: #ff6b6b;
+    text-decoration-thickness: 2px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+.problem-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    line-height: 1.4;
+    opacity: 0.5;
+}
+.solution-banner {
+    background: var(--primary-gradient);
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 780px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.solution-banner p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+}
+.solution-banner p span {
+    font-weight: 400;
+    opacity: 0.85;
+    font-size: 1rem;
+    display: block;
+    margin-top: 4px;
+}
+@media (max-width: 640px) {
+    .problems-grid { grid-template-columns: 1fr; }
+    .solution-banner { flex-direction: column; text-align: center; }
+}
+</style>
+ 
+<section class="section" style="padding: 4rem 0; background: white;">
+    <div class="container">
+        <div class="text-center" style="max-width: 620px; margin: 0 auto 2.5rem;">
+            <span style="color: var(--primary-color); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;">Ça vous parle ?</span>
+            <h2 style="margin-top: 0.5rem;">Le web local, c'est souvent ça.</h2>
+            <p>Beaucoup de mes clients sont passés par là avant de me contacter.</p>
+        </div>
+ 
+        <div class="problems-grid">
+            <div class="problem-item">
+                <span class="problem-icon">😬</span>
+                <span class="problem-strike">Un site fait par un cousin ou un stagiaire</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">💸</span>
+                <span class="problem-strike">Un abonnement mensuel à 80€ qu'on paye sans comprendre</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">📵</span>
+                <span class="problem-strike">Une agence qui ne répond plus après la livraison</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">🐢</span>
+                <span class="problem-strike">6 mois d'attente pour un site qu'on n'aime pas</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">🔒</span>
+                <span class="problem-strike">Un site qu'on ne peut pas modifier soi-même</span>
+            </div>
+            <div class="problem-item">
+                <span class="problem-icon">👻</span>
+                <span class="problem-strike">Invisible sur Google malgré un beau site</span>
+            </div>
+        </div>
+ 
+        <div class="solution-banner">
+            <p>
+                Avec moi, c'est différent.
+                <span>Un seul interlocuteur, ancré dans la vallée, qui livre vite et reste disponible.</span>
+            </p>
+            <a href="{{ site.baseurl }}/contact" class="btn btn-white" style="white-space: nowrap; flex-shrink: 0;">
+                En discuter →
+            </a>
+        </div>
+    </div>
+</section>
+
 <section class="section bg-light">
     <div class="container">
         <div class="text-center" style="max-width: 700px; margin: 0 auto;">
@@ -194,6 +310,70 @@ description: Création de sites internet performants et stratégies SEO locales 
             </div>
         </div>
     </div>
+    
+    <style>
+.guarantee-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    background: #f0faf6;
+    border: 1px solid #c8edd9;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    margin-top: 2.5rem;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.guarantee-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 0.95rem;
+}
+.guarantee-item .g-icon {
+    width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(0,153,102,0.12);
+    flex-shrink: 0;
+}
+.guarantee-sep {
+    width: 1px;
+    height: 36px;
+    background: #d0e8db;
+}
+@media (max-width: 600px) {
+    .guarantee-sep { display: none; }
+    .guarantee-strip { gap: 1.2rem; flex-direction: column; align-items: flex-start; }
+}
+</style>
+ 
+<div class="guarantee-strip">
+    <div class="guarantee-item">
+        <div class="g-icon">⚡</div>
+        Site livré en <strong style="color:var(--primary-color);">&nbsp;7 jours</strong>
+    </div>
+    <div class="guarantee-sep"></div>
+    <div class="guarantee-item">
+        <div class="g-icon">✅</div>
+        Satisfait ou <strong style="color:var(--primary-color);">&nbsp;remboursé</strong>
+    </div>
+    <div class="guarantee-sep"></div>
+    <div class="guarantee-item">
+        <div class="g-icon">🔑</div>
+        <strong style="color:var(--primary-color);">100%&nbsp;</strong> propriétaire, sans abonnement
+    </div>
+</div>
 </section>
 
 <section class="section bg-light">
