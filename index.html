@@ -91,8 +91,7 @@ description: Création de sites internet performants et stratégies SEO locales 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    max-width: 780px;
-    margin: 0 auto 3rem;
+    margin: 0 0 3rem;
 }
 .problem-item {
     display: flex;
@@ -102,7 +101,7 @@ description: Création de sites internet performants et stratégies SEO locales 
     border: 1px solid #f0f0f0;
     border-radius: 14px;
     padding: 1.2rem 1.4rem;
-    transition: 0.3s;
+    transition: background 0.25s, border-color 0.25s;
 }
 .problem-item:hover {
     background: #fff5f5;
@@ -118,10 +117,11 @@ description: Création de sites internet performants et stratégies SEO locales 
     line-height: 1.4;
 }
 .problem-icon {
-    font-size: 1.3rem;
     flex-shrink: 0;
-    line-height: 1.4;
-    opacity: 0.5;
+    width: 28px;
+    height: 28px;
+    opacity: 0.45;
+    margin-top: 1px;
 }
 .solution-banner {
     background: var(--primary-gradient);
@@ -131,8 +131,6 @@ description: Création de sites internet performants et stratégies SEO locales 
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    max-width: 780px;
-    margin: 0 auto;
     flex-wrap: wrap;
 }
 .solution-banner p {
@@ -164,28 +162,57 @@ description: Création de sites internet performants et stratégies SEO locales 
         </div>
  
         <div class="problems-grid">
+            <!-- Cousin/stagiaire -->
             <div class="problem-item">
-                <span class="problem-icon">😬</span>
+                <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    <path d="M17 11l2 2 4-4" stroke="#ff6b6b"/>
+                    <line x1="17" y1="9" x2="21" y2="13"/>
+                </svg>
                 <span class="problem-strike">Un site fait par un cousin ou un stagiaire</span>
             </div>
+            <!-- Abonnement -->
             <div class="problem-item">
-                <span class="problem-icon">💸</span>
+                <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                    <line x1="6" y1="15" x2="10" y2="15"/>
+                </svg>
                 <span class="problem-strike">Un abonnement mensuel à 80€ qu'on paye sans comprendre</span>
             </div>
+            <!-- Agence fantôme -->
             <div class="problem-item">
-                <span class="problem-icon">📵</span>
+                <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91"/>
+                    <line x1="1" y1="1" x2="23" y2="23"/>
+                </svg>
                 <span class="problem-strike">Une agence qui ne répond plus après la livraison</span>
             </div>
+            <!-- Délai -->
             <div class="problem-item">
-                <span class="problem-icon">🐢</span>
+                <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                    <line x1="4" y1="4" x2="20" y2="20"/>
+                </svg>
                 <span class="problem-strike">6 mois d'attente pour un site qu'on n'aime pas</span>
             </div>
+            <!-- Pas modifiable -->
             <div class="problem-item">
-                <span class="problem-icon">🔒</span>
+                <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0110 0v4"/>
+                    <line x1="1" y1="1" x2="23" y2="23"/>
+                </svg>
                 <span class="problem-strike">Un site qu'on ne peut pas modifier soi-même</span>
             </div>
+            <!-- Invisible Google -->
             <div class="problem-item">
-                <span class="problem-icon">👻</span>
+                <svg class="problem-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94"/>
+                    <path d="M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19"/>
+                    <line x1="1" y1="1" x2="23" y2="23"/>
+                </svg>
                 <span class="problem-strike">Invisible sur Google malgré un beau site</span>
             </div>
         </div>
@@ -316,26 +343,30 @@ description: Création de sites internet performants et stratégies SEO locales 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    flex-wrap: wrap;
+    gap: 0;
+    flex-wrap: nowrap;
     background: #f0faf6;
     border: 1px solid #c8edd9;
     border-radius: 16px;
     padding: 1.5rem 2rem;
     margin-top: 2.5rem;
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .guarantee-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-weight: 600;
     color: var(--accent-color);
     font-size: 0.95rem;
+    flex: 1;
+    justify-content: center;
+    padding: 0 1rem;
+    white-space: nowrap;
 }
-.guarantee-item .g-icon {
+.guarantee-item strong {
+    color: var(--primary-color);
+}
+.g-icon {
     width: 36px;
     height: 36px;
     background: white;
@@ -343,35 +374,69 @@ description: Création de sites internet performants et stratégies SEO locales 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
     box-shadow: 0 2px 8px rgba(0,153,102,0.12);
     flex-shrink: 0;
+    padding: 8px;
+}
+.g-icon svg {
+    width: 18px;
+    height: 18px;
 }
 .guarantee-sep {
     width: 1px;
     height: 36px;
     background: #d0e8db;
+    flex-shrink: 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
+    .guarantee-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.4rem 1.6rem;
+    }
+    .guarantee-item {
+        justify-content: flex-start;
+        padding: 0;
+        white-space: normal;
+    }
     .guarantee-sep { display: none; }
-    .guarantee-strip { gap: 1.2rem; flex-direction: column; align-items: flex-start; }
 }
 </style>
  
 <div class="guarantee-strip">
+    <!-- 7 jours -->
     <div class="guarantee-item">
-        <div class="g-icon">⚡</div>
-        Site livré en <strong style="color:var(--primary-color);">&nbsp;7 jours</strong>
+        <div class="g-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+        </div>
+        Site livré en <strong>&nbsp;7 jours</strong>
     </div>
+ 
     <div class="guarantee-sep"></div>
+ 
+    <!-- Satisfait ou remboursé -->
     <div class="guarantee-item">
-        <div class="g-icon">✅</div>
-        Satisfait ou <strong style="color:var(--primary-color);">&nbsp;remboursé</strong>
+        <div class="g-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+            </svg>
+        </div>
+        Satisfait ou <strong>&nbsp;remboursé</strong>
     </div>
+ 
     <div class="guarantee-sep"></div>
+ 
+    <!-- 100% propriétaire -->
     <div class="guarantee-item">
-        <div class="g-icon">🔑</div>
-        <strong style="color:var(--primary-color);">100%&nbsp;</strong> propriétaire, sans abonnement
+        <div class="g-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+            </svg>
+        </div>
+        <strong>100%&nbsp;</strong>propriétaire, sans abonnement
     </div>
 </div>
 </section>
