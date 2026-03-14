@@ -4,13 +4,50 @@ title: Page introuvable - Duval DVL
 permalink: /404.html
 ---
 
-<section class="section text-center" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-    <div class="container">
-        <h1 style="font-size: 5rem; color: var(--primary-color); margin-bottom: 0;">404</h1>
-        <h2 style="margin-bottom: 1.5rem;">Oups ! Cette page n'existe pas.</h2>
-        <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-            Il semble que vous vous soyez perdu dans les montagnes de Haute-Savoie. Ne vous inquiétez pas, le chemin du retour est juste ici.
+<section class="section text-center" style="padding: 5rem 0 3rem;">
+    <div class="container" style="max-width: 700px;">
+        <div style="font-size: 6rem; font-weight: 900; color: var(--primary-color); line-height: 1; margin-bottom: 0.5rem;">404</div>
+        <h1 style="font-size: 1.8rem; margin-bottom: 1rem;">Cette page s'est perdue dans les Alpes.</h1>
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+            Mais vous n'êtes pas obligé de repartir les mains vides — voici ce que je peux faire pour vous.
         </p>
-        <a href="{{ site.baseurl }}/" class="btn">Retour à l'accueil</a>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem; text-align: left;">
+
+            <a href="{{ site.baseurl }}/creation-sites-internet" style="text-decoration: none;">
+                <div style="background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.5rem; transition: border-color 0.2s, box-shadow 0.2s;" onmouseover="this.style.borderColor='var(--primary-color)'; this.style.boxShadow='0 4px 16px rgba(0,153,102,0.1)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🌐</div>
+                    <div style="font-weight: 700; color: #111; margin-bottom: 0.4rem;">Créer mon site</div>
+                    <div style="font-size: 0.85rem; color: #666;">Dès 700€, livré en 7 jours, sans abonnement.</div>
+                </div>
+            </a>
+
+            <a href="{{ site.baseurl }}/referencement-local" style="text-decoration: none;">
+                <div style="background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.5rem; transition: border-color 0.2s, box-shadow 0.2s;" onmouseover="this.style.borderColor='var(--primary-color)'; this.style.boxShadow='0 4px 16px rgba(0,153,102,0.1)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">📍</div>
+                    <div style="font-weight: 700; color: #111; margin-bottom: 0.4rem;">Booster mon SEO</div>
+                    <div style="font-size: 0.85rem; color: #666;">Apparaître en premier sur Google Maps.</div>
+                </div>
+            </a>
+
+            <a href="{{ site.baseurl }}/nos-realisations" style="text-decoration: none;">
+                <div style="background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.5rem; transition: border-color 0.2s, box-shadow 0.2s;" onmouseover="this.style.borderColor='var(--primary-color)'; this.style.boxShadow='0 4px 16px rgba(0,153,102,0.1)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🎨</div>
+                    <div style="font-weight: 700; color: #111; margin-bottom: 0.4rem;">Voir mes réalisations</div>
+                    <div style="font-size: 0.85rem; color: #666;">Des sites concrets pour des pros du 74.</div>
+                </div>
+            </a>
+
+        </div>
+
+        <div style="background: var(--primary-gradient); border-radius: 20px; padding: 2rem 2.5rem; text-align: center;">
+            <p style="color: white; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Un projet ? On en parle en 20 minutes.</p>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem;">Appel gratuit, sans engagement.</p>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <a href="{{ site.baseurl }}/contact" class="btn btn-white">Prendre rendez-vous</a>
+                <a href="{{ site.baseurl }}/" style="color: rgba(255,255,255,0.85); font-size: 0.9rem; display: flex; align-items: center; text-decoration: underline;">← Retour à l'accueil</a>
+            </div>
+        </div>
+
     </div>
 </section>
