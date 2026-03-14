@@ -20,6 +20,7 @@ permalink: /publicite-google-ads/
         </div>
         <div class="hero-image">
             <img src="{{ site.baseurl }}/assets/img/campagne-google-ads-performance.webp" alt="Suivi de performance d'une campagne publicitaire Google Ads" width="800" height="600" loading="eager">
+        </div>
     </div>
 </section>
 
@@ -38,7 +39,6 @@ permalink: /publicite-google-ads/
                 <h3>Résultats Immédiats</h3>
                 <p>Dès que la campagne est activée, vous êtes visible. C'est le levier le plus rapide pour générer des appels et des devis.</p>
             </article>
-
             <article class="card">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
@@ -46,7 +46,6 @@ permalink: /publicite-google-ads/
                 <h3>Ciblage Géographique</h3>
                 <p>On ne vise que votre zone de chalandise : Sallanches, Chamonix, Cluses... Pas un euro n'est dépensé pour des clics hors secteur.</p>
             </article>
-
             <article class="card">
                 <div class="card-icon-wrapper">
                     <svg class="icon-lg" viewBox="0 0 24 24"><path fill="currentColor" d="M12.5 6.9c1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-.53.12-1.03.3-1.48.54l1.47 1.47c.41-.17.91-.27 1.51-.27zM5.33 4.06L4.06 5.33L7.5 8.77c0 2.08 1.56 3.21 3.91 3.91l3.51 3.51c-.34.48-1.05.91-2.42.91c-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c.96-.18 1.82-.55 2.45-1.12l4.67 4.67l1.27-1.27L5.33 4.06z"/></svg>
@@ -61,12 +60,12 @@ permalink: /publicite-google-ads/
 <section class="section">
     <div class="container hero-wrapper">
         <div class="hero-image">
-             <img src="{{ site.baseurl }}/assets/img/analyse-donnees-publicitaires.webp" alt="Analyse des données et optimisation des conversions" width="800" height="600" loading="lazy">
+            <img src="{{ site.baseurl }}/assets/img/analyse-donnees-publicitaires.webp" alt="Analyse des données et optimisation des conversions" width="800" height="600" loading="lazy">
         </div>
         <div class="hero-content">
             <h2>Comment je gère vos campagnes ?</h2>
             <p style="margin-bottom: 1.5rem;">Beaucoup d'entreprises perdent de l'argent sur Google Ads car elles configurent mal leurs campagnes. Voici ma méthode pour rentabiliser chaque euro.</p>
-            
+
             <ul style="list-style: none;">
                 <li style="margin-bottom: 1.5rem; display: flex; gap: 15px;">
                     <div style="background:var(--primary-color); color:white; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; flex-shrink:0;">1</div>
@@ -100,10 +99,10 @@ permalink: /publicite-google-ads/
             <h3 class="text-center">Pack Lancement Ads</h3>
             <div class="price-tag text-center">
                 <span>Mise en place à</span>
-                250,00 €
+                350,00 €
             </div>
             <p class="text-center">Configuration professionnelle de votre première campagne pour un démarrage sur les chapeaux de roues.</p>
-            
+
             <ul class="pricing-features" style="max-width: 450px; margin: 2rem auto;">
                 <li>
                     <svg class="icon-svg check-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
@@ -177,17 +176,22 @@ permalink: /publicite-google-ads/
   "serviceType": "SEA / Google Ads",
   "provider": {
     "@type": "LocalBusiness",
-    "name": "Duval DVL"
+    "name": "Duval DVL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "540 rue Charles Viard",
+      "addressLocality": "Sallanches",
+      "postalCode": "74700",
+      "addressCountry": "FR"
+    }
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Sallanches"
-  },
-  "description": "Gestion et création de campagnes publicitaires Google Ads ciblées.",
+  "areaServed": { "@type": "City", "name": "Sallanches" },
+  "description": "Gestion et création de campagnes publicitaires Google Ads ciblées pour artisans et PME de Haute-Savoie.",
   "offers": {
     "@type": "Offer",
     "price": "350",
-    "priceCurrency": "EUR"
+    "priceCurrency": "EUR",
+    "description": "Pack Lancement Ads — mise en place campagne Google Ads"
   }
 }
 </script>
