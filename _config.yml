@@ -27,3 +27,14 @@ contact:
   phone: "07 60 16 61 36"
   email: "contact@duvaldvl.com"
   address: "540 rue Charles Viard, 74700 Sallanches"
+
+# Permalink des articles de blog
+permalink: /blog/:title/
+ 
+# Pagination (optionnel, nécessite jekyll-paginate dans plugins)
+# paginate: 6
+# paginate_path: "/blog/page:num/"
+ 
+# Excerpts automatiques (premier paragraphe)
+excerpt_separator: <!--more-->
+ 
