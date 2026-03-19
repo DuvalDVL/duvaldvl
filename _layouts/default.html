@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:image" content="{{ site.url }}/assets/img/hero-home.webp"> <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/assets/img/hero-home.webp{% endif %}">
     <meta property="og:type" content="website">
     
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
 
     {% seo %}
     
@@ -29,7 +28,7 @@
   "@id": "{{ site.url }}",
   "url": "{{ site.url }}",
   "telephone": "+33760166136",
-  "email": "duvalrenouveau@gmail.com",
+  "email": "contact@duvaldvl.com",
   "priceRange": "€€",
   "description": "Webdesigner et expert SEO à Sallanches. Création de sites internet sans abonnement mensuel pour les artisans et PME en Haute-Savoie (Chamonix, Megève, Cluses, Annecy).",
   "address": {
