@@ -8,6 +8,10 @@ reading_time: 6
 tags: [seo-local, chatgpt, geo, haute-savoie, visibilite-google, artisans]
 permalink: /blog/chatgpt-recommande-prestataires-locaux-haute-savoie/
 image: /assets/img/blog/chatgpt-geo-prestataires-locaux.webp
+
+---
+
+![ChatGPT et référencement local en Haute-Savoie](/assets/img/blog/chatgpt-geo-prestataires-locaux.webp)
 ---
 
 Un artisan de la Vallée de l'Arve m'a dit quelque chose d'intéressant, quelques semaines après la mise en ligne de son site : **"J'ai eu un client qui m'a dit qu'il avait tapé sa question dans ChatGPT et que mon nom était sorti."**
