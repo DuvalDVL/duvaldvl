@@ -2,7 +2,7 @@
 layout: post
 title: "Dis Google, trouve un bon plombier à Sallanches : Votre entreprise est-elle prête pour la recherche vocale ?"
 description: "Avec l'essor de la commande vocale au volant et de la nouvelle IA de Google (SGE), le SEO local change de dimension. Voici comment devenir la seule réponse dictée par les smartphones."
-date: 2026-03-29
+date: 2026-03-28
 category: SEO Local
 reading_time: 6
 tags: [recherche-vocale, sge, seo-local, haute-savoie, google, artisans]
