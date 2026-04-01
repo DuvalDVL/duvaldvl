@@ -8,11 +8,9 @@ reading_time: 6
 tags: [recherche-vocale, sge, seo-local, haute-savoie, google, artisans]
 permalink: /blog/recherche-vocale-sge-artisans-sallanches/
 image: /assets/img/blog/recherche-vocale-google-haute-savoie.webp
-
 ---
 
 ![Recherche vocale et SEO local en Haute-Savoie](/assets/img/blog/recherche-vocale-google-haute-savoie.webp)
----
 
 Imaginez un artisan au volant de son utilitaire sur la route de Combloux, ou un particulier les mains dans le cambouis dans son garage. Plutôt que de sortir son téléphone et de taper sur le clavier, il appuie sur un bouton et demande à haute voix : 
 
@@ -50,7 +48,7 @@ Pour qu'un assistant vocal ou une IA vous choisisse comme "La" meilleure répons
 C'est l'arme fatale pour la recherche vocale. Identifiez les 10 questions que vos clients vous posent le plus souvent au téléphone. Créez une page sur votre site où vous écrivez la question exacte en titre, suivie d'une réponse claire, précise et directe de 40 à 50 mots juste en dessous. C'est exactement le format que Google Assistant adore "lire" à voix haute.
 
 **2. Verrouiller votre Google Profil d'Entreprise**
-Google fait confiance à... Google. Pour les requêtes locales vocales, l'algorithme pioche massivement dans les fiches Google Business. Mais attention, avoir une fiche ne suffit pas : vos horaires doivent être d'une précision chirurgicale (y compris les jours fériés). Si quelqu'un cherche un plombier "ouvert maintenant" un samedi à 18h, et que vos horaires ne sont pas renseignés, Google ne prendra pas le risque de vous recommander.
+Google fait confiance à... Google. Pour les requêtes locales vocales, l'algorithme pioche massivement dans les fiches Google Business. Mais attention, avoir une fiche ne suffit pas : vos horaires doivent être d'une précision chirurgicale (y compris les jours fériés). Si quelqu'un cherche un [plombier à Sallanches](/creation-site-internet-sallanches/) "ouvert maintenant" un samedi à 18h, et que vos horaires ne sont pas renseignés, Google ne prendra pas le risque de vous recommander.
 
 **3. Utiliser un langage ultra-local et naturel**
 Ne dites pas juste "J'interviens en Haute-Savoie". Soyez précis pour les algorithmes sémantiques. Mentionnez que vous travaillez "du Plateau d'Assy jusqu'au centre-ville de Megève, en passant par Domancy et le coteau de Passy". Plus vous êtes ancré géographiquement dans votre contenu, plus l'IA comprendra que vous êtes l'expert du secteur.
