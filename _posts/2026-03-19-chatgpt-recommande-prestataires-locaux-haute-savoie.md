@@ -8,17 +8,13 @@ reading_time: 6
 tags: [seo-local, chatgpt, geo, haute-savoie, visibilite-google, artisans]
 permalink: /blog/chatgpt-recommande-prestataires-locaux-haute-savoie/
 image: /assets/img/blog/chatgpt-geo-prestataires-locaux.webp
-
 ---
 
 ![ChatGPT et référencement local en Haute-Savoie](/assets/img/blog/chatgpt-geo-prestataires-locaux.webp)
----
 
 Un artisan de la Vallée de l'Arve m'a dit quelque chose d'intéressant, quelques semaines après la mise en ligne de son site : **"J'ai eu un client qui m'a dit qu'il avait tapé sa question dans ChatGPT et que mon nom était sorti."**
 
 Ce n'était pas un hasard. C'était le résultat d'un travail précis sur la structure de son site et sa présence en ligne. Et c'est reproductible.
-
-<!--more-->
 
 ## Ce qui est en train de changer dans la façon dont les gens cherchent
 
@@ -26,7 +22,7 @@ Pendant vingt ans, le schéma était simple : un client tape "plombier Sallanche
 
 Ce schéma existe toujours. Mais depuis 2023, une nouvelle habitude s'est installée, d'abord chez les plus jeunes, puis progressivement dans toutes les tranches d'âge : **poser la question directement à une IA**.
 
-"Quel artisan en rénovation je peux appeler à Passy ?"
+"[Quel artisan en rénovation je peux appeler à Passy ?](/creation-site-internet-passy/)"
 "Trouver un bon détailer auto à Sallanches"
 "Meilleur garage mécanique prestige en Haute-Savoie"
 
