@@ -5,12 +5,17 @@
         <div class="menu-toggle" id="mobile-menu">☰</div>
         
         <nav class="nav-links" id="nav-links">
-            <a href="{{ site.baseurl }}/">Accueil</a>
-            <a href="{{ site.baseurl }}/creation-sites-internet/">Site Internet</a>
-            <a href="{{ site.baseurl }}/referencement-local/">SEO Local</a>
-            <a href="{{ site.baseurl }}/publicite-google-ads/">Google Ads</a>
-            <a href="{{ site.baseurl }}/nos-realisations/">Réalisations</a>
-            <a href="{{ site.baseurl }}/a-propos/">À propos</a>
+            <a href="{{ site.baseurl }}/creation-sites-internet/" class="{% if page.url contains '/creation-sites-internet' %}active-link{% endif %}">Site Internet</a>
+            
+            <a href="{{ site.baseurl }}/referencement-local/" class="{% if page.url contains '/referencement-local' %}active-link{% endif %}">SEO Local</a>
+            
+            <a href="{{ site.baseurl }}/publicite-google-ads/" class="{% if page.url contains '/publicite-google-ads' %}active-link{% endif %}">Google Ads</a>
+            
+            <a href="{{ site.baseurl }}/nos-realisations/" class="{% if page.url contains '/nos-realisations' %}active-link{% endif %}">Réalisations</a>
+            
+            <a href="{{ site.baseurl }}/blog/" class="{% if page.url contains '/blog' %}active-link{% endif %}">Blog</a>
+            
+            <a href="{{ site.baseurl }}/a-propos/" class="{% if page.url contains '/a-propos' %}active-link{% endif %}">À propos</a>
             
             <a href="{{ site.baseurl }}/contact/" class="btn" style="padding: 10px 24px; font-size: 0.95rem;">Contact</a>
         </nav>
