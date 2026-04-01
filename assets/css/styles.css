@@ -96,29 +96,30 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 900px) {
     .menu-toggle { 
         display: block; 
-        z-index: 1001; /* Force le bouton à rester au-dessus du menu ouvert */
+        z-index: 1001; 
         position: relative;
     }
     
     .nav-links {
-        position: fixed; /* Reste fixe pour prendre tout l'écran */
+        position: fixed; 
         top: 0; 
         right: 0;
-        bottom: 0;
-        left: auto;
+        height: 100vh; /* CORRECTION : Force la hauteur à 100% de l'écran */
         width: 100%;
-        max-width: 320px; /* Crée un beau panneau latéral (ne prend pas 100% de la largeur sur tablette) */
-        background: white; 
+        max-width: 320px; 
+        background-color: #ffffff !important; /* Force le fond blanc solide */
+        display: flex;
         flex-direction: column; 
-        padding: calc(var(--header-height) + 2rem) 2rem 2rem; /* Laisse de l'espace en haut pour la croix */
-        box-shadow: -10px 0 30px rgba(0,0,0,0.1); /* Ombre portée sur le côté gauche */
-        transform: translateX(100%); /* Décale le menu complètement à droite (caché) */
-        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Animation ultra fluide et naturelle */
+        padding: calc(var(--header-height) + 2rem) 2rem 2rem; 
+        box-shadow: -10px 0 30px rgba(0,0,0,0.15); 
+        transform: translateX(100%); 
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
         z-index: 1000;
+        overflow-y: auto; /* Sécurité pour les petits écrans */
     }
     
     .nav-links.active { 
-        transform: translateX(0); /* Fait glisser le menu à sa place */
+        transform: translateX(0); 
     }
     
     .btn { width: 100%; }
