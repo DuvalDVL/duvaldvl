@@ -23,8 +23,32 @@
 </header>
 
 <script>
-    // Script menu mobile
-    document.getElementById('mobile-menu').addEventListener('click', function() {
-        document.getElementById('nav-links').classList.toggle('active');
+    // Script menu mobile fluide (Slide-in)
+    const mobileMenuBtn = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenuBtn.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        
+        // Change l'icône burger en croix et gère le défilement
+        if (navLinks.classList.contains('active')) {
+            mobileMenuBtn.innerHTML = '✕';
+            mobileMenuBtn.style.fontSize = '2rem'; // Ajuste la taille de la croix
+            document.body.style.overflow = 'hidden'; // Empêche de scroller le site derrière
+        } else {
+            mobileMenuBtn.innerHTML = '☰';
+            mobileMenuBtn.style.fontSize = '1.8rem'; // Remet la taille du burger
+            document.body.style.overflow = 'auto'; // Réactive le scroll
+        }
+    });
+
+    // (Optionnel mais recommandé) Fermer le menu si on clique sur un lien
+    const menuLinks = navLinks.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            mobileMenuBtn.innerHTML = '☰';
+            document.body.style.overflow = 'auto';
+        });
     });
 </script>
