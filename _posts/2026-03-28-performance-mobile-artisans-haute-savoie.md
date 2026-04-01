@@ -8,11 +8,9 @@ reading_time: 5
 tags: [performance-web, mobile, seo-local, haute-savoie, pagespeed, artisans]
 permalink: /blog/vitesse-site-mobile-artisans-haute-savoie/
 image: /assets/img/blog/performance-mobile-haute-savoie.webp
-
 ---
 
 ![Performance mobile et création de site en Haute-Savoie](/assets/img/blog/performance-mobile-haute-savoie.webp)
----
 
 Imaginez la scène : un vacancier est coincé dans les bouchons entre Sallanches et Chamonix. Le voyant moteur de sa voiture s'allume. Paniqué, il sort son smartphone, capte péniblement deux barres de 3G, et tape "garagiste urgence Passy". 
 
@@ -32,7 +30,7 @@ Aujourd'hui, **plus de 70% des recherches locales se font sur mobile**. Si votre
 
 Depuis la mise en place des "Core Web Vitals" (Signaux Web Essentiels), Google a changé les règles du jeu. Le moteur de recherche pénalise désormais activement les sites lents, lourds, ou qui "sautent" pendant le chargement sur mobile.
 
-Pourquoi ? Parce que Google veut offrir la meilleure expérience possible à ses utilisateurs. S'il envoie quelqu'un sur un site de menuisier à Megève qui met 10 secondes à charger, l'utilisateur est frustré. Google préférera toujours mettre en avant un site ultra-rapide, même si l'entreprise est légèrement moins connue.
+Pourquoi ? Parce que Google veut offrir la meilleure expérience possible à ses utilisateurs. S'il envoie quelqu'un sur un [site de menuisier à Megève](/creation-site-internet-megeve/) qui met 10 secondes à charger, l'utilisateur est frustré. Google préférera toujours mettre en avant un site ultra-rapide, même si l'entreprise est légèrement moins connue.
 
 Avoir un site "joli" ne suffit plus. Un site qui charge instantanément est un site qui rassure, qui convertit, et que Google adore.
 
