@@ -336,12 +336,15 @@ description: Création de sites internet performants et stratégies SEO locales 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Duval DVL",
-  "image": "{{ site.url }}{{ site.baseurl }}/assets/img/logo.png",
-  "description": "Webdesigner et expert SEO à Sallanches. Création de sites internet et référencement local en Haute-Savoie.",
-  "telephone": "07 60 16 61 36",
+  "@type": "ProfessionalService",
+  "name": "Duval DVL - Création Site Internet & SEO",
+  "image": "{{ site.url }}/assets/img/hero-home.webp",
+  "@id": "{{ site.url }}",
+  "url": "{{ site.url }}",
+  "telephone": "+33760166136",
   "email": "contact@duvaldvl.com",
+  "priceRange": "€€",
+  "description": "Webdesigner et expert SEO à Sallanches. Création de sites internet sans abonnement mensuel pour les artisans et PME en Haute-Savoie (Chamonix, Megève, Cluses, Annecy).",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "540 rue Charles Viard",
@@ -351,13 +354,19 @@ description: Création de sites internet performants et stratégies SEO locales 
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 45.9405,
-    "longitude": 6.6305
+    "latitude": 45.935,
+    "longitude": 6.629
   },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
       "opens": "08:00",
       "closes": "19:00"
     },
@@ -368,11 +377,21 @@ description: Création de sites internet performants et stratégies SEO locales 
       "closes": "12:00"
     }
   ],
-  "url": "https://www.duvaldvl.com",
-  "priceRange": "€€",
+  "areaServed": [
+    { "@type": "City", "name": "Sallanches" },
+    { "@type": "City", "name": "Chamonix" },
+    { "@type": "City", "name": "Megève" },
+    { "@type": "City", "name": "Cluses" },
+    { "@type": "City", "name": "Passy" },
+    { "@type": "City", "name": "Bonneville" },
+    { "@type": "City", "name": "Annecy" },
+    { "@type": "City", "name": "Annemasse" },
+    { "@type": "City", "name": "Genève" }
+  ],
   "sameAs": [
+    "{{ site.social.linkedin }}",
     "{{ site.social.instagram }}",
-    "{{ site.social.linkedin }}"
+    "{{ site.social.gmb }}"
   ]
 }
 </script>
