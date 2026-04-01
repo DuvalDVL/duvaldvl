@@ -418,3 +418,13 @@ details[open] summary::after { transform: rotate(45deg); }
     .post-header h1 { font-size: 1.7rem; }
     .blog-post-wrapper { padding: 2rem 1rem 4rem; }
 }
+
+.nav-links a.active-link {
+    color: var(--primary-color);
+    font-weight: 800;
+}
+/* On empêche le bouton Contact de prendre la couleur primaire du texte s'il est actif */
+.nav-links a.btn.active-link {
+    color: white !important;
+    background: var(--primary-dark);
+}
