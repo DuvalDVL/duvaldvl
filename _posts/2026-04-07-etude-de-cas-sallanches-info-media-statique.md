@@ -9,6 +9,8 @@ image: /assets/img/articles/etude-cas-sallanches-info.webp
 tags: [jamstack, jekyll, seo, etude-de-cas, web-statique, performance]
 ---
 
+![Sallanches Infos - Site statique actu locale](/assets/img/blog/etude-cas-sallanches-info.webp)
+
 Peut-on rivaliser avec les grands quotidiens régionaux en utilisant uniquement des technologies statiques ? C'est le défi que nous avons relevé avec le lancement de Sallanches.info. Retour sur les choix techniques et stratégiques d'un projet qui redéfinit l'information locale.
 
 ## L'objectif : L'indépendance par la performance
